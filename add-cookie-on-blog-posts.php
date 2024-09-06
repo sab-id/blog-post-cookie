@@ -22,6 +22,7 @@ function set_blog_post_cookie() {
         if (isset($_COOKIE['cookie_blog'])) {
             unset($_COOKIE['cookie_blog']);
             setcookie('cookie_blog', '', time() - 3600, '/');
+            return;
         }
     }
 
